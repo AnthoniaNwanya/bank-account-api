@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Schema.ObjectId;
 
-// require('mongoose-currency').loadType(mongoose);
-// const Currency = mongoose.Types.Currency;
 const UserAccountSchema = new mongoose.Schema({
   id: ObjectId,
 
@@ -24,14 +22,10 @@ const UserAccountSchema = new mongoose.Schema({
   },
   initialBalance:  {
     type: Number,
-    // get: v => (v/100).toFixed(2),
-    // set: v => v*100
 }
 },
 { timestamps: true },
-// { 
-//   toJSON: { getters: true } 
-// }
+
 );
 
 module.exports = mongoose.model("Account", UserAccountSchema);
