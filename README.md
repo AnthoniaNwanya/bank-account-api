@@ -58,7 +58,7 @@
   "accountName": "Flutter Limited", 
   "accountDOB": "22-08-2016" , 
   "accountType": "Savings", 
-  "initialBalance": 10000
+  "initialBalance": 0
 }
 ```
 
@@ -73,7 +73,7 @@
     "AccountNumber": 8217964013,
     "AccountName": "Flutter Limited",
     "AccountType": "Savings",
-    "AccountBalance": 10000
+    "AccountBalance": 0
   },
   "message": "Account has been generated successfully!"
 }
