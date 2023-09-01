@@ -12,9 +12,12 @@ MongoDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Display for hosted Link
 app.get("/", (req, res) => {
-  res.send("Flutter Bank Management API")
+  res.redirect("http://localhost:8000/flutter/fetch-all")
 });
+
+
 app.use("/flutter", AccountRoute);
 
 app.use(function (err, req, res, next) {
