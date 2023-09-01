@@ -6,7 +6,7 @@ const createUserAccount = async (data) => {
 };
 
 const getUserAccount = async (data) => {
-    const getAccount = await AccountSchema.findOne({"accountNumber": data.accountNumber});
+    const getAccount = await AccountSchema.findOne({"accountNumber": data});
     return getAccount;
 };
 

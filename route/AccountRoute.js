@@ -3,11 +3,10 @@ const controller = require("../controller/AccountController");
 const router = express.Router();
 
 const validateRequest = require("../middleware/validator");
-const { postSchema, resolveSchema } = require("../validatorSchema/account");
+const { postSchema } = require("../validatorSchema/account");
 
 router.post("/create", validateRequest(postSchema), controller.create);
-
-router.post("/resolve", validateRequest(resolveSchema), controller.resolve);
+router.get("/resolve/:accountNumber", controller.resolve);
 router.get("/fetch-all", controller.fetchAll);
 
 

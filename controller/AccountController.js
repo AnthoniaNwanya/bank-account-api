@@ -36,8 +36,8 @@ module.exports = {
 
   resolve: async (req, res, next) => {
     try {
-      const { accountNumber } = req.body;
-      const foundAccount = await AccountService.retrieveOne({ "accountNumber": accountNumber });
+      const  accountNumber  = req.params.accountNumber;
+      const foundAccount = await AccountService.retrieveOne(accountNumber);
 
       formatResponse({
         res,
