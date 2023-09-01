@@ -58,7 +58,7 @@ module.exports = {
         res,
         data: foundUsers,
         statusCode: 200,
-        message: "Users retrieved successfully"
+        message: "Accounts retrieved successfully"
       })
     } catch (err) {
       next(err)
