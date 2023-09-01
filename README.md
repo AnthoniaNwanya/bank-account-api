@@ -1,7 +1,8 @@
 # BANK ACCOUNT API
 
 ##### Description:
-
+ A basic Bank Account Management API with three endpoints: one to create a bank account, one to resolve a bank account, and one to fetch all bank accounts.
+ 
 ##### Clone this Repo:
 
 `git clone https://github.com/AnthoniaNwanya/bank-account-api.git`
@@ -10,7 +11,7 @@
 
 `npm install`
 
-##### Start :
+##### Start Server:
 
 `npm start`
 
