@@ -12,6 +12,9 @@ MongoDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("Flutter Bank Management API")
+});
 app.use("/flutter", AccountRoute);
 
 app.use(function (err, req, res, next) {
