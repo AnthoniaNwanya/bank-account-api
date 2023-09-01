@@ -18,13 +18,7 @@ const postSchema = JOI.object({
 
 })
 
-const resolveSchema = JOI.object({
-    accountNumber: JOI.number()
-        .required(),  
-
-})
 
 module.exports = { 
     postSchema,
-    resolveSchema
  }
