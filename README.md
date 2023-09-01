@@ -80,17 +80,9 @@
 
 ```
 
-###### Resolve (Get User By Account Number)
+###### Resolve (Get User Account By Account Number)
 
-###### Method: POST /flutter/resolve
-
-###### Request:
-
-```
-{
-  "accountNumber": "8217964013"
-}
-```
+###### Method: POST /flutter/resolve/:accountNumber
 
 ###### Response:
 
