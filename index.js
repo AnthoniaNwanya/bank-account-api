@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Display for hosted Link
 app.get("/", (req, res) => {
-  res.redirect("http://localhost:8000/flutter/fetch-all")
+  res.redirect("https://bank-account-api-ojuu.onrender.com/flutter/fetch-all")
 });
 
 
